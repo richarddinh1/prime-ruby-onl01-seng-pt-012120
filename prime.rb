@@ -5,5 +5,5 @@ def prime?(x)
   elsif x < 1 
      return false
    else 
-     
+     for y in 2
 end
