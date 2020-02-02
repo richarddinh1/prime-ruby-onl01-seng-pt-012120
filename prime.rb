@@ -1,15 +1,10 @@
-def prime?(x)
-  if x == 1
-    return true 
-  elsif x < 1
+def prime?(n)
+  if n <= 1
     return false
-  else
-  for y in 2..(x-1)
-    if (x % y) == 0
-      return false 
-    end
-  end 
-end
-
-  true
+  elsif n <= 3
+    return true
+  else (2..n/2).none? do |x|
+    n % x == 0
+  end
+  end
 end
